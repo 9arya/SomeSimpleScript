@@ -1,2 +1,2 @@
 # SomePythonScript
-just random python script
+I made this when I was bored,it’s just a hobby
