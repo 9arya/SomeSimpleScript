@@ -1,7 +1,7 @@
 #MIT License
 #
 #Copyright (c) 2026 9arya
-import random
+import secrets
 import string
 import base64
 import sys
@@ -18,7 +18,7 @@ def main():
             LengthOfPassword += int(sys.argv[1])
         mo=""
         for n in range(LengthOfPassword):
-            d=random.choice(string.printable)
+            d=secrets.choice(string.printable)
             mo+=d
         FirstResult="".join(mo)
         SecondResult = base64.z85encode(FirstResult.encode())
